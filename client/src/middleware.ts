@@ -1,19 +1,26 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
+import { auth, clerkClient } from "@clerk/nextjs/server";
 
 const isStudentRoute = createRouteMatcher(["/user/(.*)"]);
 const isTeacherRoute = createRouteMatcher(["/teacher/(.*)"]);
 
 export default clerkMiddleware(async (auth, req) => {
-  const { userId, sessionClaims } = await auth();
+  const { userId } = await auth();
 
+  // If no user is signed in, let Clerk handle the redirect
   if (!userId) {
     return;
   }
 
-  // ✅ Access public metadata directly from sessionClaims
-  const userRole = (sessionClaims?.publicMetadata?.userType as "student" | "teacher") || "student";
+  // Get the ClerkClient instance by calling clerkClient()
+  const client = await clerkClient();
+  // Fetch user data to get publicMetadata
+  const user = await client.users.getUser(userId);
+  const userRole =
+    (user.publicMetadata?.userType as "student" | "teacher") || "student";
 
+  // Debugging log to confirm userRole
   console.log(
     "Middleware - userId:",
     userId,
@@ -33,6 +40,7 @@ export default clerkMiddleware(async (auth, req) => {
     return NextResponse.redirect(url);
   }
 
+  // No redirect needed, proceed with the request
   return NextResponse.next();
 });
 
