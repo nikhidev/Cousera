@@ -71,7 +71,7 @@ const Landing = () => {
         className="landing__hero"
       >
         <div className="landing__hero-content">
-          <h1 className="landing__title">Courses</h1>
+          <h1 className="landing__title">SKILLOps</h1>
           <p className="landing__description">
             This is the list of the courses you can enroll in.
             <br />
