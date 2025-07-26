@@ -1,9 +1,7 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(dashboard)/user/profile/[[...profile]]/page": "app/(dashboard)/user/profile/[[...profile]]/page.js",
-  "/(dashboard)/user/courses/page": "app/(dashboard)/user/courses/page.js",
+  "/page": "app/page.js",
   "/(nondashboard)/search/page": "app/(nondashboard)/search/page.js",
-  "/(nondashboard)/checkout/page": "app/(nondashboard)/checkout/page.js",
-  "/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page.js",
-  "/(dashboard)/user/billing/page": "app/(dashboard)/user/billing/page.js"
+  "/(auth)/signin/[[...signin]]/page": "app/(auth)/signin/[[...signin]]/page.js",
+  "/(dashboard)/user/courses/page": "app/(dashboard)/user/courses/page.js"
 }

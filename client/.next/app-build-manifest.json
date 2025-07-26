@@ -6,26 +6,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(nondashboard)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(nondashboard)/layout.js"
-    ],
-    "/(nondashboard)/checkout/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(nondashboard)/checkout/page.css",
-      "static/chunks/app/(nondashboard)/checkout/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/(nondashboard)/search/page": [
+    "/(auth)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(nondashboard)/search/page.js"
+      "static/chunks/app/(auth)/layout.js"
+    ],
+    "/(auth)/signin/[[...signin]]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/signin/[[...signin]]/page.js"
     ],
     "/(dashboard)/layout": [
       "static/chunks/webpack.js",
@@ -37,20 +31,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/user/courses/page.js"
     ],
-    "/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": [
+    "/(nondashboard)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page.js"
+      "static/chunks/app/(nondashboard)/layout.js"
     ],
-    "/(dashboard)/user/billing/page": [
+    "/(nondashboard)/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/user/billing/page.js"
-    ],
-    "/(dashboard)/user/profile/[[...profile]]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/user/profile/[[...profile]]/page.js"
+      "static/chunks/app/(nondashboard)/search/page.js"
     ]
   }
 }

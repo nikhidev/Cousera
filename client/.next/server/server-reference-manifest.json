@@ -2,15 +2,15 @@
   "node": {
     "7f32c7048bfbb37ddea66d07db17d830a3e3d7a917": {
       "workers": {
-        "app/(nondashboard)/checkout/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
         "app/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(nondashboard)/search/page": {
+        "app/_not-found/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(auth)/signin/[[...signin]]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -18,40 +18,30 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/(dashboard)/user/billing/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/(dashboard)/user/profile/[[...profile]]/page": {
+        "app/(nondashboard)/search/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
-        "app/(nondashboard)/checkout/page": "rsc",
         "app/page": "rsc",
-        "app/(nondashboard)/search/page": "rsc",
+        "app/_not-found/page": "rsc",
+        "app/(auth)/signin/[[...signin]]/page": "rsc",
         "app/(dashboard)/user/courses/page": "rsc",
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": "rsc",
-        "app/(dashboard)/user/billing/page": "rsc",
-        "app/(dashboard)/user/profile/[[...profile]]/page": "rsc"
+        "app/(nondashboard)/search/page": "rsc"
       }
     },
     "7f60073ff136ae8903464cba66d3a68d5c13334b33": {
       "workers": {
-        "app/(nondashboard)/checkout/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
         "app/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(nondashboard)/search/page": {
+        "app/_not-found/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(auth)/signin/[[...signin]]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -59,40 +49,30 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/(dashboard)/user/billing/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/(dashboard)/user/profile/[[...profile]]/page": {
+        "app/(nondashboard)/search/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
-        "app/(nondashboard)/checkout/page": "rsc",
         "app/page": "rsc",
-        "app/(nondashboard)/search/page": "rsc",
+        "app/_not-found/page": "rsc",
+        "app/(auth)/signin/[[...signin]]/page": "rsc",
         "app/(dashboard)/user/courses/page": "rsc",
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": "rsc",
-        "app/(dashboard)/user/billing/page": "rsc",
-        "app/(dashboard)/user/profile/[[...profile]]/page": "rsc"
+        "app/(nondashboard)/search/page": "rsc"
       }
     },
     "7ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010": {
       "workers": {
-        "app/(nondashboard)/checkout/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
         "app/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(nondashboard)/search/page": {
+        "app/_not-found/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(auth)/signin/[[...signin]]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
@@ -100,40 +80,30 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/(dashboard)/user/billing/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        },
-        "app/(dashboard)/user/profile/[[...profile]]/page": {
+        "app/(nondashboard)/search/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%5B%227f32c7048bfbb37ddea66d07db17d830a3e3d7a917%22%2C%22syncKeylessConfigAction%22%5D%2C%5B%227f60073ff136ae8903464cba66d3a68d5c13334b33%22%2C%22deleteKeylessAction%22%5D%2C%5B%227ff6c66ad7a6830c04aa60f2c4bd52ed15263fb010%22%2C%22createOrReadKeylessAction%22%5D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
-        "app/(nondashboard)/checkout/page": "rsc",
         "app/page": "rsc",
-        "app/(nondashboard)/search/page": "rsc",
+        "app/_not-found/page": "rsc",
+        "app/(auth)/signin/[[...signin]]/page": "rsc",
         "app/(dashboard)/user/courses/page": "rsc",
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": "rsc",
-        "app/(dashboard)/user/billing/page": "rsc",
-        "app/(dashboard)/user/profile/[[...profile]]/page": "rsc"
+        "app/(nondashboard)/search/page": "rsc"
       }
     },
     "7f692ab77d778bfb5bcfab9bbe6216569f9c68d859": {
       "workers": {
-        "app/(nondashboard)/checkout/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
         "app/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
-        "app/(nondashboard)/search/page": {
+        "app/_not-found/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(auth)/signin/[[...signin]]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
@@ -141,27 +111,17 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/(dashboard)/user/billing/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/(dashboard)/user/profile/[[...profile]]/page": {
+        "app/(nondashboard)/search/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNIKHIL%5C%5COneDrive%5C%5CDesk%5C%5Clearning_management%5C%5Cclient%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f692ab77d778bfb5bcfab9bbe6216569f9c68d859%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
           "async": false
         }
       },
       "layer": {
-        "app/(nondashboard)/checkout/page": "action-browser",
         "app/page": "action-browser",
-        "app/(nondashboard)/search/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/(auth)/signin/[[...signin]]/page": "action-browser",
         "app/(dashboard)/user/courses/page": "action-browser",
-        "app/(dashboard)/user/courses/[courseId]/chapters/[chapterId]/page": "action-browser",
-        "app/(dashboard)/user/billing/page": "action-browser",
-        "app/(dashboard)/user/profile/[[...profile]]/page": "action-browser"
+        "app/(nondashboard)/search/page": "action-browser"
       }
     }
   },
