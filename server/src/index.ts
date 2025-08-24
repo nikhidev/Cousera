@@ -12,6 +12,7 @@ import {
   createClerkClient,
   requireAuth,
 } from "@clerk/express";
+
 /* ROUTE IMPORTS */
 import courseRoutes from "./routes/courseRoutes";
 import userClerkRoutes from "./routes/userClerkRoutes";
@@ -20,20 +21,28 @@ import userCourseProgressRoutes from "./routes/userCourseProgressRoutes";
 
 /* CONFIGURATIONS */
 dotenv.config();
-const isProduction = process.env.NODE_ENV === "production";
-if (!isProduction) {
-  dynamoose.aws.ddb.local();
-}
-console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY);
-console.log("CLERK_PUBLISHABLE_KEY:", process.env.CLERK_PUBLISHABLE_KEY)
-;
- export const clerkClient = createClerkClient({
-  
-  secretKey: process.env.CLERK_SECRET_KEY,
-  publishableKey: process.env.CLERK_PUBLISHABLE_KEY, 
-});
-console.log("clerk publishable key:", process.env.CLERK_PUBLISHABLE_KEY);
 
+const isProduction = process.env.NODE_ENV === "production";
+
+// DynamoDB config
+if (!isProduction) {
+  // running locally → use DynamoDB Local
+  dynamoose.aws.ddb.local();
+} else {
+  // running in AWS Lambda → use real DynamoDB
+  dynamoose.aws.ddb();
+}
+
+// Clerk client setup
+export const clerkClient = createClerkClient({
+  secretKey: process.env.CLERK_SECRET_KEY,
+  publishableKey: process.env.CLERK_PUBLISHABLE_KEY,
+});
+
+console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY);
+console.log("CLERK_PUBLISHABLE_KEY:", process.env.CLERK_PUBLISHABLE_KEY);
+
+/* EXPRESS APP */
 const app = express();
 app.use(express.json());
 app.use(helmet());
@@ -41,7 +50,16 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://skllops.vercel.app", // 👈 production frontend
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
+
+app.options("*",cors());
 app.use(clerkMiddleware());
 
 /* ROUTES */
@@ -54,16 +72,17 @@ app.use("/users/clerk", requireAuth(), userClerkRoutes);
 app.use("/transactions", requireAuth(), transactionRoutes);
 app.use("/users/course-progress", requireAuth(), userCourseProgressRoutes);
 
-/* SERVER */
+/* LOCAL DEV SERVER */
 const port = process.env.PORT || 3000;
 if (!isProduction) {
   app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`✅ Local server running on port ${port}`);
   });
 }
 
-// aws production environment
+/* AWS LAMBDA HANDLER */
 const serverlessApp = serverless(app);
+
 export const handler = async (event: any, context: any) => {
   if (event.action === "seed") {
     await seed();
