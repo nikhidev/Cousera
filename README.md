@@ -95,3 +95,100 @@ npm install
 
 # 5. Start the development server
 npm run dev
+🔑 Environment Variables
+
+Create a .env file and include the following (adjust as per your setup):
+
+PORT=5000
+DATABASE_URL=mongodb://localhost:27017/skillops
+JWT_SECRET=your-secret-key
+CLERK_SECRET_KEY=your-clerk-secret
+CLERK_PUBLISHABLE_KEY=your-clerk-public
+
+📂 Project Structure
+skillops/
+│
+├── frontend/          # React/Next.js code
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+│
+├── backend/           # Express backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middlewares/
+│   └── config/
+│
+├── images/            # Banner and screenshots
+├── README.md
+└── package.json
+
+👥 User Roles & Flow
+Instructor Flow
+
+Instructor signs up and logs in.
+
+Creates and publishes a course with details and price.
+
+Manages enrolled students.
+
+Student Flow
+
+Student signs up and logs in.
+
+Browses and purchases a course.
+
+Accesses purchased content and tracks progress.
+
+🚀 Future Roadmap
+
+Planned features to make SkillOps more powerful:
+
+💳 Payment integration (Stripe, Razorpay, PayPal).
+
+📜 Course completion certificates.
+
+💬 Discussion forums for students & instructors.
+
+📊 Analytics dashboards.
+
+🌍 Multi-language support.
+
+📱 Mobile app integration.
+
+🤝 Contribution Guidelines
+
+We ❤️ contributions!
+
+Fork the repository
+
+Create a new branch (feature/your-feature)
+
+Commit your changes
+
+Push your branch
+
+Open a Pull Request
+
+📄 License
+
+This project is licensed under the MIT License.
+
+🌟 Live Demo
+Visit the live application: https://skllops.vercel.app/
+
+Test Credentials:
+
+Student: Use sign-up to create a student account
+Teacher: Use sign-up to create a teacher account
+
+📬 Contact
+
+Author: Nikhil kant
+
+Email: nikhilmjgp@gmail.com
+
+GitHub: https://github.com/nikhidev
+
