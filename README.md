@@ -52,6 +52,9 @@ SkillOps solves this problem by:
 
 ---
 
+## 🌐 Live Demo
+👉 [**Click here to try SkillOps Live**](https://skllops.vercel.app/)
+
 ## 🖼️ Screenshots
 
 
@@ -173,16 +176,6 @@ Push your branch
 Open a Pull Request
 
 📄 License
-
-This project is licensed under the MIT License.
-
-🌟 Live Demo
-Visit the live application: https://skllops.vercel.app/
-
-Test Credentials:
-
-Student: Use sign-up to create a student account
-Teacher: Use sign-up to create a teacher account
 
 📬 Contact
 
