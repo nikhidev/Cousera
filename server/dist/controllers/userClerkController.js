@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateUser = void 0;
-const index_1 = require("../index"); // Adjust the import path as necessary
+const index_1 = require("../index");
 const updateUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { userId } = req.params;
     const userData = req.body;
@@ -18,13 +18,13 @@ const updateUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         const user = yield index_1.clerkClient.users.updateUserMetadata(userId, {
             publicMetadata: {
                 userType: userData.publicMetadata.userType,
-                settings: userData.publicMetadata.settings
-            }
+                settings: userData.publicMetadata.settings,
+            },
         });
-        res.json({ message: "user updated successfully", data: user });
+        res.json({ message: "User updated successfully", data: user });
     }
     catch (error) {
-        res.status(500).json({ message: "Error retrieving course", error: error });
+        res.status(500).json({ message: "Error updating user", error });
     }
 });
 exports.updateUser = updateUser;

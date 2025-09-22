@@ -66,12 +66,10 @@ dotenv_1.default.config();
 const isProduction = process.env.NODE_ENV === "production";
 // DynamoDB config
 if (!isProduction) {
-    // running locally → use DynamoDB Local
-    dynamoose.aws.ddb.local();
+    dynamoose.aws.ddb.local(); // local DynamoDB
 }
 else {
-    // running in AWS Lambda → use real DynamoDB
-    dynamoose.aws.ddb();
+    dynamoose.aws.ddb(); // real DynamoDB
 }
 // Clerk client setup
 exports.clerkClient = (0, express_2.createClerkClient)({
@@ -89,21 +87,21 @@ app.use((0, morgan_1.default)("common"));
 app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use((0, cors_1.default)({
-    origin: "https://skllops.vercel.app", // 👈 production frontend
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
+    origin: process.env.NODE_ENV === 'production'
+        ? ['https://yourdomain.com']
+        : ['http://localhost:3000', 'http://localhost:3001'],
+    credentials: true
 }));
-app.options("*", (0, cors_1.default)());
+// ✅ Clerk middleware must be enabled globally
 app.use((0, express_2.clerkMiddleware)());
 /* ROUTES */
 app.get("/", (req, res) => {
     res.send("Hello World");
 });
 app.use("/courses", courseRoutes_1.default);
-app.use("/users/clerk", (0, express_2.requireAuth)(), userClerkRoutes_1.default);
-app.use("/transactions", (0, express_2.requireAuth)(), transactionRoutes_1.default);
-app.use("/users/course-progress", (0, express_2.requireAuth)(), userCourseProgressRoutes_1.default);
+app.use("/users/clerk", userClerkRoutes_1.default);
+app.use("/transactions", transactionRoutes_1.default);
+app.use("/users/course-progress", userCourseProgressRoutes_1.default);
 /* LOCAL DEV SERVER */
 const port = process.env.PORT || 3000;
 if (!isProduction) {
